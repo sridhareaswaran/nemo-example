@@ -1,0 +1,41 @@
+{
+    "base": {
+        "tests": "path:spec/*.js",
+        "env": {
+            "DEBUG": "nemo-runner"
+        },
+        "mocha": {
+            "timeout": 10000,
+            "reporter": "mochawesome",
+            "retries": 0,
+            "grep": "argv:grep",
+            "require": "babel-register",
+            "reportOptions": {
+                "reportDir": "path:report",
+                "reportFilename": "myReport"
+            }
+        }
+    },
+    "chrome": {
+        "driver":{
+            "browser": "chrome"
+        },
+        "mocha": {
+            "reportOptions": {
+                "reportDir": "path:report",
+                "reportFilename": "chromeReport"
+            }
+        }
+    },
+    "firefox": {
+        "driver":{
+            "browser": "firefox"
+        },
+        "mocha": {
+            "reportOptions": {
+                "reportDir": "path:report",
+                "reportFilename": "firefoxReport"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "nemo-automation",
+  "version": "1.0.0",
+  "description": "Nemojs for e2e tests",
+  "engines": {
+    "node": ">7.5.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "flow": "flow",
+    "nemo": "node_modules/.bin/nemo-runner -B test/functional -P chrome -G @some",
+    "nemo:debug": "nemo-runner --inspect --debug-brk -B test/functional -P chrome -G @some",
+    "mocha": "./node_modules/.bin/_mocha test/functional/spec/*.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.1.10",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "chai": "^3.5.0",
+    "eslint": "^3.16.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "flow-bin": "0.61.0",
+    "mocha": "^3.1.2",
+    "mochawesome": "^3.0.0",
+    "nconf": "^0.9.1",
+    "nemo": "^2.4.1",
+    "nemo-runner": "^1.3.0",
+    "nemo-screenshot": "^3.0.0",
+    "nemo-view": "^3.0.0"
+  }
+}

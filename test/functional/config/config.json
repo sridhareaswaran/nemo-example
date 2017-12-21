@@ -1,0 +1,54 @@
+{
+  "driver": {
+    "browser": "chrome"
+  },
+  "plugins": {
+    "view": {
+      "module": "nemo-view",
+      "arguments": [
+        "path:locator"
+      ]
+    },
+    "screenshot": {
+      "module": "nemo-screenshot",
+      "arguments": [
+        "path:report", [
+          "exception",
+          "click"
+        ]
+      ]
+    }
+  },
+  "data": {
+    "baseUrl": "https://google.com"
+  },
+  "profiles": {
+    "base": {
+      "tests": "path:spec/*.js",
+      "env": {
+				"DEBUG": "nemo-runner"
+			},
+      "mocha": {
+        "timeout": 600000,
+        "reporter": "mochawesome",
+        "retries": 0,
+        "grep": "argv:grep",
+        "require": ["babel-register", "babel-polyfill"],
+        "reportOptions": {
+          "reportDir": "path:report",
+          "reportFilename": "myReport"
+        }
+      }
+    },
+    "chrome": {
+      "driver": {
+        "browser": "chrome"
+      }
+    },
+    "firefox": {
+      "driver": {
+        "browser": "firefox"
+      }
+    }
+  }
+}
