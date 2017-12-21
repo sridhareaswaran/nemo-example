@@ -33,7 +33,6 @@
         "reporter": "mochawesome",
         "retries": 0,
         "grep": "argv:grep",
-        "require": ["babel-register", "babel-polyfill"],
         "reportOptions": {
           "reportDir": "path:report",
           "reportFilename": "myReport"

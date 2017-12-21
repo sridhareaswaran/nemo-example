@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Nemojs for e2e tests",
   "engines": {
-    "node": ">7.5.0"
+    "node": ">8.0.0"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
@@ -13,14 +13,6 @@
     "mocha": "./node_modules/.bin/_mocha test/functional/spec/*.js"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.17.0",
-    "babel-eslint": "^7.1.1",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.1.10",
-    "babel-preset-flow": "^6.23.0",
-    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
     "eslint": "^3.16.1",
     "eslint-config-standard": "^6.2.1",

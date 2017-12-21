@@ -1,14 +1,17 @@
 // @flow
 
-import BasePage from './BasePage'
+const BasePage = require('./BasePage')
 
-export default class GooglePage extends BasePage {
+class GooglePage extends BasePage {
 
   async navigateToHome () {
-    await this.nemo.driver.get(this.nemo.data.baseURL)
+    let nemo = this.nemo
+    await nemo.driver.get(nemo.data.baseURL)
   }
 
-  async searchFor (data: string | number) {
+  async searchFor (data) {
     await this.nemo.view.google.searchBox().sendKeys(data)
   }
 }
+
+module.exports = GooglePage

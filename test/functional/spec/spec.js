@@ -1,8 +1,9 @@
 // @flow
 
-import { assert } from 'chai'
-
-import GooglePage from '../flow/GooglePage'
+/* import { assert } from 'chai'
+import GooglePage from '../flow/GooglePage' */
+const assert = require('chai').assert
+const GooglePage = require('../flow/GooglePage')
 
 describe('my test suite', _ => {
   beforeEach(async function () {
@@ -14,7 +15,6 @@ describe('my test suite', _ => {
 
   it('@some test no 1', async function () {
     let nemo = this.nemo
-    console.log('this is nemo : ' + nemo)
     let google = new GooglePage(nemo)
     await google.navigateToHome()
     await google.searchFor(77)
