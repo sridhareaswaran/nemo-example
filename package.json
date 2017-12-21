@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "flow": "flow",
-    "nemo": "node_modules/.bin/nemo-runner -B test/functional -P chrome -G @some",
+    "nemo": "node_modules/.bin/nemo-runner -B test/functional -P chrome",
     "nemo:debug": "nemo-runner --inspect --debug-brk -B test/functional -P chrome -G @some",
     "mocha": "./node_modules/.bin/_mocha test/functional/spec/*.js"
   },
