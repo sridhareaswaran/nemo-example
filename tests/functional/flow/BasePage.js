@@ -1,11 +1,9 @@
-// @flow
 
-class BasePage {
+export default class BasePage {
+  nemo
 
   constructor (resolvedNemo) {
     this.nemo = resolvedNemo
   }
 
 }
-
-module.exports = BasePage

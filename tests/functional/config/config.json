@@ -32,6 +32,10 @@
         "timeout": 600000,
         "reporter": "mochawesome",
         "retries": 0,
+        "require": [
+					"babel-register",
+					"babel-polyfill"
+				],
         "grep": "argv:grep",
         "reportOptions": {
           "reportDir": "path:report",

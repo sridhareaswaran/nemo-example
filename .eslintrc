@@ -5,11 +5,20 @@
     "flowtype"
   ],
   "env": {
-      "node": true,
-      "mocha": true
+    "browser": false,
+    "node": true,
+    "amd": false,
+    "mocha": false,
+    "jasmine": false
   },
-  "parserOptions": {
-    "ecmaVersion": 8,
-    "sourceType": "module"
+  "ecmaFeatures": {},
+  "globals": {},
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "vars-on-top": 0,
+    "no-mixed-spaces-and-tabs": "error",
+    "key-spacing": ["error", { "mode": "strict" }],
+    "keyword-spacing": "error",
+    "no-undef":"off"
   }
 }

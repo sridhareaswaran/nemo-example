@@ -1,16 +1,13 @@
 // @flow
 
-/* import { assert } from 'chai'
-import GooglePage from '../flow/GooglePage' */
-const assert = require('chai').assert
-const GooglePage = require('../flow/GooglePage')
+import { assert } from 'chai'
+import GooglePage from '../flow/GooglePage'
 
 describe('my test suite', _ => {
-  beforeEach(async function () {
+  before(async function () {
   })
 
-  afterEach(async function () {
-    await this.nemo.driver.quit()
+  after(async function () {
   })
 
   it('@some test no 1', async function () {
