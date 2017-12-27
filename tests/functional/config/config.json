@@ -30,7 +30,7 @@
 			},
       "mocha": {
         "timeout": 600000,
-        "reporter": "mochawesome",
+        "reporter": "mocha-allure-reporter",
         "retries": 0,
         "require": [
 					"babel-register",

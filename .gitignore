@@ -41,6 +41,10 @@ build/Release
 node_modules/
 jspm_packages/
 
+#Output
+mochawesome-report/
+allure-re*/
+
 # Typescript v1 declaration files
 typings/
 
