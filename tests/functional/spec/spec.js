@@ -3,7 +3,7 @@ import { assert } from 'chai'
 import GooglePage from '../flow/GooglePage'
 import ResultsPage from '../flow/ResultsPage'
 
-var chai = require('chai')
+let chai = require('chai')
 chai.use(require('chai-string'))
 
 let nemo, google, results
@@ -34,7 +34,7 @@ describe('my test suite', _ => {
     let google = new GooglePage(nemo)
     await google.navigateToHome()
     await google.searchFor('Paypal')
-    assert.startsWith(await results.getPageTitle(), '77')
+    assert.startsWith(await results.getPageTitle(), 'Paypal')
   })
 
   it('test no 4', async function () {
