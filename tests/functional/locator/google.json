@@ -1,5 +1,6 @@
 {
     "searchBox": "#lst-ib",
     "searchButton": "#search_button_homepage",
-    "logo": "#hplogo"
+    "logo": "#hplogo",
+    "appsIcon": ".gb_b.gb_cc"
 }

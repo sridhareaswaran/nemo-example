@@ -1,5 +1,5 @@
 [include]
-./node_modules
+
 
 [libs]
 ./interfaces
@@ -8,4 +8,4 @@
 suppress_comment= \\(.\\|\n\\)*\\$FlowIssue
 
 [ignore]
-./tests
+./node_modules

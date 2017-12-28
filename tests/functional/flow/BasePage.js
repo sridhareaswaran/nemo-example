@@ -1,3 +1,4 @@
+/* @flow */
 
 import { Key } from 'selenium-webdriver'
 

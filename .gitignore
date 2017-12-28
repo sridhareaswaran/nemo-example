@@ -45,6 +45,7 @@ jspm_packages/
 #Output
 mochawesome-report/
 allure-re*/
+tests/functional/report/
 
 # Typescript v1 declaration files
 typings/

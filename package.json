@@ -5,10 +5,11 @@
   "license": "MIT",
   "scripts": {
     "node_clean": "rimraf node_modules",
+    "allure_clean": "rimraf allure-report && rimraf allure-results",
     "lint": "./node_modules/.bin/eslint .",
     "nemo": "node_modules/.bin/nemo-runner -B tests/functional -P chrome -G @some",
     "nemo:ff": "node_modules/.bin/nemo-runner -B tests/functional -P firefox -G @some",
-    "nemo:debug": "set DEBUG=nemo* nemo-runner -B tests/functional -P chrome -G @some",
+    "nemo:debug": "set DEBUG=nemo* && nemo-runner -B tests/functional -P chrome -G @some",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "devDependencies": {
@@ -43,7 +44,6 @@
     "nemo": "^3.0.0",
     "nemo-runner": "^1.3.0",
     "nemo-screenshot": "^3.0.0",
-    "nemo-view": "^3.0.0",
-    "webpack": "^3.10.0"
+    "nemo-view": "^3.0.0"
   }
 }
