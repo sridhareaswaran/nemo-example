@@ -136,6 +136,11 @@ export default class Util extends BasePage {
     return attachmentLog
   }
 
+  async beforeEachTest() {}
+
+  async beforeAllTest(test) {
+    console.log(color.yellow('\n\t►► ') + test.parent.title)
+  }
 
   async afterEachTest(allure, test) {
     if (test.state === 'passed') {
