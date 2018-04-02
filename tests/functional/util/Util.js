@@ -165,5 +165,12 @@ export default class Util extends BasePage {
     }
   }
 
+  async afterAllTest(allure) {
+    allure.addEnvironment('Platform', await this.getOSType() + '  ' + await this.getOSRelease())
+    allure.addEnvironment('Browser', await this.getBrowser() + '  ' + await this.getBrowserVer())
+    allure.addEnvironment('Driver Version', await this.getDriverVersion())
+    allure.addEnvironment('Node', await this.getNodeVersion())
+    await this.deleteAllCookies()
+  }
 
 }
