@@ -12,5 +12,9 @@ export default class BasePage {
   async pressEnter () {
     await this.nemo.driver.actions().sendKeys(Key.ENTER).perform()
   }
+  
+  async pressTAB () {
+    await this.nemo.driver.actions().sendKeys(Key.TAB).perform()
+  }
 
 }
