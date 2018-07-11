@@ -2,5 +2,6 @@
     "searchBox": "#lst-ib",
     "searchButton": "#search_button_homepage",
     "logo": "#hplogo",
-    "appsIcon": ".gb_b.gb_cc"
+    "appsIcon": ".gb_b.gb_cc",
+    "signInButton": "#gb_70"
 }
